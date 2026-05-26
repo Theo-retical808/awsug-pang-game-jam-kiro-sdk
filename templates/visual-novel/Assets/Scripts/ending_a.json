@@ -1,0 +1,17 @@
+{
+  "id": "ending_a",
+  "lines": [
+    {
+      "speaker": "Guide",
+      "text": "Great choice! Open the Dialogue/ folder to start writing your story."
+    },
+    {
+      "speaker": "Guide",
+      "text": "Use KIRO IDE to ask AI to generate dialogue scripts, add characters, or create branching paths."
+    },
+    {
+      "speaker": "System",
+      "text": "[END - Replace this with your actual story content!]"
+    }
+  ]
+}

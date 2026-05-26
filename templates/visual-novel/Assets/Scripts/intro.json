@@ -1,0 +1,26 @@
+{
+  "id": "intro",
+  "lines": [
+    {
+      "speaker": "System",
+      "text": "Welcome to your Visual Novel template!",
+      "sceneChange": "default"
+    },
+    {
+      "speaker": "Guide",
+      "text": "This is a placeholder story. Replace the scripts in Assets/Scripts/ with your own."
+    },
+    {
+      "speaker": "Guide",
+      "text": "You can add characters, scenes, branching paths, and more."
+    },
+    {
+      "speaker": "Guide",
+      "text": "What would you like to do?",
+      "choices": [
+        { "text": "Start building my story!", "jumpToScript": "ending_a", "jumpToLine": 0 },
+        { "text": "Explore the code first.", "jumpToScript": "ending_b", "jumpToLine": 0 }
+      ]
+    }
+  ]
+}

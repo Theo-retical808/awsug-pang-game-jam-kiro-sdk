@@ -1,0 +1,21 @@
+{
+  "id": "ending_b",
+  "lines": [
+    {
+      "speaker": "Guide",
+      "text": "Smart! Check out the modular architecture:"
+    },
+    {
+      "speaker": "Guide",
+      "text": "Dialogue/ - Text and branching logic. Scenes/ - Backgrounds and visuals. Characters/ - Character data."
+    },
+    {
+      "speaker": "Guide",
+      "text": "Each system is independent. Edit one without breaking others!"
+    },
+    {
+      "speaker": "System",
+      "text": "[END - Replace this with your actual story content!]"
+    }
+  ]
+}
