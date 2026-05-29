@@ -113,7 +113,7 @@ echo [3/5] Restoring templates...
 
 echo      - Visual Novel...
 pushd templates\visual-novel
-dotnet restore --quiet
+dotnet restore -v quiet
 if %errorlevel% neq 0 (
     color 0C
     echo [ERROR] Failed to restore Visual Novel.
@@ -125,7 +125,7 @@ popd
 
 echo      - Tactical RPG...
 pushd templates\tactical-rpg
-dotnet restore --quiet
+dotnet restore -v quiet
 if %errorlevel% neq 0 (
     color 0C
     echo [ERROR] Failed to restore Tactical RPG.
@@ -137,7 +137,7 @@ popd
 
 echo      - Puzzle Game...
 pushd templates\puzzle-game
-dotnet restore --quiet
+dotnet restore -v quiet
 if %errorlevel% neq 0 (
     color 0C
     echo [ERROR] Failed to restore Puzzle Game.
@@ -159,7 +159,7 @@ echo [4/5] Verifying builds...
 set BUILD_OK=1
 
 pushd templates\visual-novel
-dotnet build --no-restore --quiet >nul 2>&1
+dotnet build --no-restore -v quiet >nul 2>&1
 if %errorlevel% neq 0 (
     echo      [WARN] Visual Novel has build issues.
     set BUILD_OK=0
@@ -169,7 +169,7 @@ if %errorlevel% neq 0 (
 popd
 
 pushd templates\tactical-rpg
-dotnet build --no-restore --quiet >nul 2>&1
+dotnet build --no-restore -v quiet >nul 2>&1
 if %errorlevel% neq 0 (
     echo      [WARN] Tactical RPG has build issues.
     set BUILD_OK=0
@@ -179,7 +179,7 @@ if %errorlevel% neq 0 (
 popd
 
 pushd templates\puzzle-game
-dotnet build --no-restore --quiet >nul 2>&1
+dotnet build --no-restore -v quiet >nul 2>&1
 if %errorlevel% neq 0 (
     echo      [WARN] Puzzle Game has build issues.
     set BUILD_OK=0
